@@ -5,11 +5,11 @@ const bodyParser = require('body-parser');
 const https = require('https');
 
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static('styles'))
+app.use(express.static(__dirname + '/source'))
 
 
 app.get('/', function(req, res) {
-    res.sendFile(__dirname + '/templates/signup.html');
+    res.sendFile(__dirname + '/source/signup.html');
 });
 
 
