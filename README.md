@@ -1,0 +1,2 @@
+# mailinglist
+Mailing list server
