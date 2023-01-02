@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + '/source'))
 
 client.setConfig({
-    apiKey: "a4287a9a40a896cbc259ad1af4b123b1-us11",
+    apiKey: process.env.API_KEY,
     server: "us11",
   });
 
